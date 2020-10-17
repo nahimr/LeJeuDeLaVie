@@ -1,7 +1,7 @@
 .PHONY: main
 main:
 	
-	gcc -Wall main.c -L /usr/lib -lSDL2 -lSDL2main -I /usr/local/include -o main && ./main
+	gcc -Wall -std=c11 -Wextra -pedantic-errors main.c -L /usr/lib -lSDL2  -I /usr/local/include -o main && ./main
 clean:
 	rm main
 run:

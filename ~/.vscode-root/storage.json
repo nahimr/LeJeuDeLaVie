@@ -40,8 +40,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1447,8 +1446,8 @@
             "folder": "file:///home/nahim/Documents/jeudelavie",
             "backupPath": "/home/nahim/Documents/jeudelavie/~/.vscode-root/Backups/0563a6da6f66570b7c66025ad3c98272",
             "uiState": {
-                "mode": 1,
-                "x": 5,
+                "mode": 0,
+                "x": 0,
                 "y": 59,
                 "width": 1920,
                 "height": 1021

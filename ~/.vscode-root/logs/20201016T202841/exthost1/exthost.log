@@ -1,0 +1,423 @@
+[2020-10-16 20:28:47.851] [exthost] [info] extension host started
+[2020-10-16 20:28:47.927] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2020-10-16 20:28:47.927] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2020-10-16 20:28:48.019] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools {"startup":false,"extensionId":{"value":"ms-vscode.cpptools","_lower":"ms-vscode.cpptools"},"activationEvent":"onLanguage:c"}
+[2020-10-16 20:28:48.019] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/ms-vscode.cpptools-1.0.1/dist/main
+[2020-10-16 20:28:48.108] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onDebugDynamicConfigurations"}
+[2020-10-16 20:28:48.108] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2020-10-16 20:28:48.549] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-10-16 20:28:48.549] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-10-16 20:28:48.552] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-10-16 20:28:48.552] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2020-10-16 20:28:48.577] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-10-16 20:28:48.577] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2020-10-16 20:28:48.602] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-10-16 20:28:48.602] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2020-10-16 20:28:48.619] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-10-16 20:28:48.619] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2020-10-16 20:28:48.826] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-10-16 20:28:48.826] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/github/dist/extension.js
+[2020-10-16 20:28:49.073] [exthost] [info] eager extensions activated
+[2020-10-16 20:28:49.133] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2020-10-16 20:28:49.133] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/github-authentication/dist/extension.js
+[2020-10-16 20:54:20.693] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:54:20.693] [exthost] [error] undefined
+[2020-10-16 20:54:22.857] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:54:22.857] [exthost] [error] undefined
+[2020-10-16 20:54:26.046] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:54:26.046] [exthost] [error] undefined
+[2020-10-16 20:54:33.473] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:54:33.473] [exthost] [error] undefined
+[2020-10-16 20:54:47.223] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:54:47.223] [exthost] [error] undefined
+[2020-10-16 20:54:52.702] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:54:52.702] [exthost] [error] undefined
+[2020-10-16 20:55:02.741] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:55:02.741] [exthost] [error] undefined
+[2020-10-16 20:55:08.288] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:55:08.288] [exthost] [error] undefined
+[2020-10-16 20:55:11.919] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+[2020-10-16 20:55:13.030] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+[2020-10-16 20:55:48.859] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:55:48.859] [exthost] [error] undefined
+[2020-10-16 20:55:55.136] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:55:55.136] [exthost] [error] undefined
+[2020-10-16 20:56:05.759] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:56:05.759] [exthost] [error] undefined
+[2020-10-16 20:56:23.101] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:56:23.101] [exthost] [error] undefined
+[2020-10-16 20:56:27.251] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:56:27.251] [exthost] [error] undefined
+[2020-10-16 20:56:31.555] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:56:31.555] [exthost] [error] undefined
+[2020-10-16 20:56:35.622] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:56:35.622] [exthost] [error] undefined
+[2020-10-16 20:56:39.740] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:56:39.740] [exthost] [error] undefined
+[2020-10-16 20:56:46.026] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:56:46.026] [exthost] [error] undefined
+[2020-10-16 20:57:09.288] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:57:09.288] [exthost] [error] undefined
+[2020-10-16 20:57:22.834] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:57:22.834] [exthost] [error] undefined
+[2020-10-16 20:57:27.230] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:57:27.230] [exthost] [error] undefined
+[2020-10-16 20:57:39.482] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:57:39.482] [exthost] [error] undefined
+[2020-10-16 20:57:59.507] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:57:59.507] [exthost] [error] undefined
+[2020-10-16 20:58:04.018] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:58:04.018] [exthost] [error] undefined
+[2020-10-16 20:58:06.093] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:58:06.093] [exthost] [error] undefined
+[2020-10-16 20:58:13.295] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:58:13.295] [exthost] [error] undefined
+[2020-10-16 20:59:11.641] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:59:11.641] [exthost] [error] undefined
+[2020-10-16 20:59:17.865] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:59:17.865] [exthost] [error] undefined
+[2020-10-16 20:59:32.525] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:59:32.525] [exthost] [error] undefined
+[2020-10-16 20:59:53.598] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 20:59:53.598] [exthost] [error] undefined
+[2020-10-16 21:00:12.720] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:00:12.720] [exthost] [error] undefined
+[2020-10-16 21:00:25.084] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:00:25.084] [exthost] [error] undefined
+[2020-10-16 21:00:50.315] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:00:50.315] [exthost] [error] undefined
+[2020-10-16 21:01:45.615] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:01:45.615] [exthost] [error] undefined
+[2020-10-16 21:01:50.113] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:01:50.113] [exthost] [error] undefined
+[2020-10-16 21:01:58.832] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:01:58.832] [exthost] [error] undefined
+[2020-10-16 21:02:05.597] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:02:05.597] [exthost] [error] undefined
+[2020-10-16 21:02:09.822] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:02:09.822] [exthost] [error] undefined
+[2020-10-16 21:02:33.109] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:02:33.109] [exthost] [error] undefined
+[2020-10-16 21:03:59.558] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:03:59.558] [exthost] [error] undefined
+[2020-10-16 21:05:32.680] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:05:32.681] [exthost] [error] undefined
+[2020-10-16 21:05:41.079] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:05:41.079] [exthost] [error] undefined
+[2020-10-16 21:05:51.308] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:05:51.308] [exthost] [error] undefined
+[2020-10-16 21:07:20.511] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:07:20.511] [exthost] [error] undefined
+[2020-10-16 21:09:34.699] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:09:34.699] [exthost] [error] undefined
+[2020-10-16 21:09:48.941] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:09:48.941] [exthost] [error] undefined
+[2020-10-16 21:10:02.884] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:10:02.884] [exthost] [error] undefined
+[2020-10-16 21:10:42.519] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:10:42.519] [exthost] [error] undefined
+[2020-10-16 21:10:46.855] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:10:46.855] [exthost] [error] undefined
+[2020-10-16 21:10:48.940] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:10:48.940] [exthost] [error] undefined
+[2020-10-16 21:11:49.243] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:11:49.243] [exthost] [error] undefined
+[2020-10-16 21:11:53.320] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:11:53.320] [exthost] [error] undefined
+[2020-10-16 21:12:14.949] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:12:14.949] [exthost] [error] undefined
+[2020-10-16 21:12:21.427] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:12:21.427] [exthost] [error] undefined
+[2020-10-16 21:12:31.751] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:12:31.751] [exthost] [error] undefined
+[2020-10-16 21:12:43.847] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:12:43.847] [exthost] [error] undefined
+[2020-10-16 21:12:51.124] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:12:51.124] [exthost] [error] undefined
+[2020-10-16 21:12:55.282] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:12:55.282] [exthost] [error] undefined
+[2020-10-16 21:13:22.989] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:13:22.989] [exthost] [error] undefined
+[2020-10-16 21:13:37.686] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:13:37.687] [exthost] [error] undefined
+[2020-10-16 21:14:43.816] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:14:43.817] [exthost] [error] undefined
+[2020-10-16 21:14:51.169] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:14:51.169] [exthost] [error] undefined
+[2020-10-16 21:14:57.649] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:14:57.649] [exthost] [error] undefined
+[2020-10-16 21:16:41.365] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:16:41.365] [exthost] [error] undefined
+[2020-10-16 21:16:43.514] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:16:43.514] [exthost] [error] undefined
+[2020-10-16 21:17:02.483] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:17:02.483] [exthost] [error] undefined
+[2020-10-16 21:18:01.038] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:18:01.038] [exthost] [error] undefined
+[2020-10-16 21:19:12.378] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:19:12.378] [exthost] [error] undefined
+[2020-10-16 21:19:33.839] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:19:33.839] [exthost] [error] undefined
+[2020-10-16 21:19:44.658] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:19:44.658] [exthost] [error] undefined
+[2020-10-16 21:19:52.980] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:19:52.980] [exthost] [error] undefined
+[2020-10-16 21:20:15.314] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:20:15.314] [exthost] [error] undefined
+[2020-10-16 21:20:25.501] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:20:25.501] [exthost] [error] undefined
+[2020-10-16 21:20:29.517] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:20:29.517] [exthost] [error] undefined
+[2020-10-16 21:20:38.748] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:20:38.748] [exthost] [error] undefined
+[2020-10-16 21:20:43.475] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:20:43.475] [exthost] [error] undefined
+[2020-10-16 21:21:34.380] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:21:34.380] [exthost] [error] undefined
+[2020-10-16 21:22:30.666] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:22:30.666] [exthost] [error] undefined
+[2020-10-16 21:23:02.055] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+[2020-10-16 21:23:04.618] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:23:04.618] [exthost] [error] undefined
+[2020-10-16 21:24:06.627] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:24:06.627] [exthost] [error] undefined
+[2020-10-16 21:24:21.441] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:24:21.441] [exthost] [error] undefined
+[2020-10-16 21:24:28.864] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:24:28.864] [exthost] [error] undefined
+[2020-10-16 21:24:34.276] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:24:34.276] [exthost] [error] undefined
+[2020-10-16 21:25:44.159] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:25:44.159] [exthost] [error] undefined
+[2020-10-16 21:25:46.505] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:25:46.505] [exthost] [error] undefined
+[2020-10-16 21:25:57.674] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:25:57.675] [exthost] [error] undefined
+[2020-10-16 21:26:07.235] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:26:07.235] [exthost] [error] undefined
+[2020-10-16 21:26:33.934] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:26:33.934] [exthost] [error] undefined
+[2020-10-16 21:26:40.094] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:26:40.094] [exthost] [error] undefined
+[2020-10-16 21:26:44.191] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:26:44.191] [exthost] [error] undefined
+[2020-10-16 21:26:46.203] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:26:46.203] [exthost] [error] undefined
+[2020-10-16 21:26:59.745] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:26:59.745] [exthost] [error] undefined
+[2020-10-16 21:27:06.263] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:27:06.263] [exthost] [error] undefined
+[2020-10-16 21:29:42.893] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:29:42.893] [exthost] [error] undefined
+[2020-10-16 21:29:51.300] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:29:51.300] [exthost] [error] undefined
+[2020-10-16 21:29:57.399] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:29:57.399] [exthost] [error] undefined
+[2020-10-16 21:30:20.861] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:30:20.861] [exthost] [error] undefined
+[2020-10-16 21:30:29.544] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:30:29.544] [exthost] [error] undefined
+[2020-10-16 21:30:34.221] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:30:34.221] [exthost] [error] undefined
+[2020-10-16 21:32:41.967] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:32:41.967] [exthost] [error] undefined
+[2020-10-16 21:33:19.778] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:33:19.778] [exthost] [error] undefined
+[2020-10-16 21:36:54.715] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:36:54.716] [exthost] [error] undefined
+[2020-10-16 21:37:20.124] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:37:20.124] [exthost] [error] undefined
+[2020-10-16 21:37:31.046] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:37:31.046] [exthost] [error] undefined
+[2020-10-16 21:37:35.326] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:37:35.326] [exthost] [error] undefined
+[2020-10-16 21:37:46.901] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:37:46.901] [exthost] [error] undefined
+[2020-10-16 21:38:23.328] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:38:23.328] [exthost] [error] undefined
+[2020-10-16 21:38:38.467] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:38:38.467] [exthost] [error] undefined
+[2020-10-16 21:38:46.729] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:38:46.729] [exthost] [error] undefined
+[2020-10-16 21:39:05.517] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:39:05.517] [exthost] [error] undefined
+[2020-10-16 21:39:18.395] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:39:18.395] [exthost] [error] undefined
+[2020-10-16 21:39:54.075] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:39:54.075] [exthost] [error] undefined
+[2020-10-16 21:40:16.631] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:40:16.631] [exthost] [error] undefined
+[2020-10-16 21:41:26.842] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:41:26.842] [exthost] [error] undefined
+[2020-10-16 21:41:33.144] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:41:33.144] [exthost] [error] undefined
+[2020-10-16 21:41:57.670] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:41:57.670] [exthost] [error] undefined
+[2020-10-16 21:42:06.394] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:42:06.395] [exthost] [error] undefined
+[2020-10-16 21:42:14.864] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:42:14.864] [exthost] [error] undefined
+[2020-10-16 21:42:34.456] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:42:34.456] [exthost] [error] undefined
+[2020-10-16 21:42:45.090] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:42:45.090] [exthost] [error] undefined
+[2020-10-16 21:43:01.841] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:43:01.841] [exthost] [error] undefined
+[2020-10-16 21:43:12.512] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:43:12.512] [exthost] [error] undefined
+[2020-10-16 21:43:39.760] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:43:39.760] [exthost] [error] undefined
+[2020-10-16 21:43:53.100] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:43:53.100] [exthost] [error] undefined
+[2020-10-16 21:44:06.092] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:44:06.092] [exthost] [error] undefined
+[2020-10-16 21:44:10.191] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:44:10.191] [exthost] [error] undefined
+[2020-10-16 21:44:26.877] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:44:26.877] [exthost] [error] undefined
+[2020-10-16 21:45:30.160] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:45:30.160] [exthost] [error] undefined
+[2020-10-16 21:45:44.768] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:45:44.768] [exthost] [error] undefined
+[2020-10-16 21:45:56.326] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:45:56.326] [exthost] [error] undefined
+[2020-10-16 21:46:00.611] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:46:00.611] [exthost] [error] undefined
+[2020-10-16 21:46:55.475] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:46:55.475] [exthost] [error] undefined
+[2020-10-16 21:47:10.183] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:47:10.183] [exthost] [error] undefined
+[2020-10-16 21:47:16.063] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:47:16.063] [exthost] [error] undefined
+[2020-10-16 21:47:53.648] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:47:53.648] [exthost] [error] undefined
+[2020-10-16 21:47:59.267] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:47:59.267] [exthost] [error] undefined
+[2020-10-16 21:48:44.617] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:48:44.617] [exthost] [error] undefined
+[2020-10-16 21:48:51.942] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+[2020-10-16 21:50:14.004] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:50:14.004] [exthost] [error] undefined
+[2020-10-16 21:50:35.055] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:50:35.055] [exthost] [error] undefined
+[2020-10-16 21:50:46.515] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:50:46.515] [exthost] [error] undefined
+[2020-10-16 21:51:00.052] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:51:00.052] [exthost] [error] undefined
+[2020-10-16 21:51:18.921] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:51:18.921] [exthost] [error] undefined
+[2020-10-16 21:51:29.396] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:51:29.397] [exthost] [error] undefined
+[2020-10-16 21:51:50.148] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:51:50.148] [exthost] [error] undefined
+[2020-10-16 21:53:06.910] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:53:06.910] [exthost] [error] undefined
+[2020-10-16 21:53:17.285] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:53:17.285] [exthost] [error] undefined
+[2020-10-16 21:53:19.373] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:53:19.373] [exthost] [error] undefined
+[2020-10-16 21:53:34.118] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:53:34.118] [exthost] [error] undefined
+[2020-10-16 21:53:44.762] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:53:44.762] [exthost] [error] undefined
+[2020-10-16 21:54:03.776] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:54:03.776] [exthost] [error] undefined
+[2020-10-16 21:54:16.750] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:54:16.750] [exthost] [error] undefined
+[2020-10-16 21:54:36.289] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:54:36.289] [exthost] [error] undefined
+[2020-10-16 21:54:41.630] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:54:41.630] [exthost] [error] undefined
+[2020-10-16 21:55:03.356] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:55:03.357] [exthost] [error] undefined
+[2020-10-16 21:55:37.149] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:55:37.149] [exthost] [error] undefined
+[2020-10-16 21:55:43.467] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:55:43.467] [exthost] [error] undefined
+[2020-10-16 21:55:47.764] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:55:47.764] [exthost] [error] undefined
+[2020-10-16 21:56:40.798] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:56:40.798] [exthost] [error] undefined
+[2020-10-16 21:56:55.840] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:56:55.840] [exthost] [error] undefined
+[2020-10-16 21:57:06.596] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:57:06.596] [exthost] [error] undefined
+[2020-10-16 21:57:23.406] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:57:23.406] [exthost] [error] undefined
+[2020-10-16 21:58:45.747] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:58:45.747] [exthost] [error] undefined
+[2020-10-16 21:59:17.578] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:59:17.578] [exthost] [error] undefined
+[2020-10-16 21:59:24.018] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:59:24.018] [exthost] [error] undefined
+[2020-10-16 21:59:32.360] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:59:32.360] [exthost] [error] undefined
+[2020-10-16 21:59:39.058] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:59:39.058] [exthost] [error] undefined
+[2020-10-16 21:59:45.657] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:59:45.657] [exthost] [error] undefined
+[2020-10-16 21:59:54.025] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 21:59:54.025] [exthost] [error] undefined
+[2020-10-16 22:00:46.436] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:00:46.436] [exthost] [error] undefined
+[2020-10-16 22:00:48.666] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:00:48.666] [exthost] [error] undefined
+[2020-10-16 22:01:01.118] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:01:01.118] [exthost] [error] undefined
+[2020-10-16 22:01:18.238] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:01:18.238] [exthost] [error] undefined
+[2020-10-16 22:01:26.633] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:01:26.633] [exthost] [error] undefined
+[2020-10-16 22:02:12.004] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:02:12.004] [exthost] [error] undefined
+[2020-10-16 22:02:20.723] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:02:20.723] [exthost] [error] undefined
+[2020-10-16 22:02:31.376] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:02:31.376] [exthost] [error] undefined
+[2020-10-16 22:02:44.312] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:02:44.312] [exthost] [error] undefined
+[2020-10-16 22:03:01.128] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:03:01.128] [exthost] [error] undefined
+[2020-10-16 22:03:02.267] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+[2020-10-16 22:03:17.552] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:03:17.552] [exthost] [error] undefined
+[2020-10-16 22:03:26.205] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:03:26.205] [exthost] [error] undefined
+[2020-10-16 22:03:36.756] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:03:36.756] [exthost] [error] undefined
+[2020-10-16 22:03:43.106] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:03:43.106] [exthost] [error] undefined
+[2020-10-16 22:03:55.593] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:03:55.593] [exthost] [error] undefined
+[2020-10-16 22:04:01.845] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:04:01.845] [exthost] [error] undefined
+[2020-10-16 22:04:53.402] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:04:53.402] [exthost] [error] undefined
+[2020-10-16 22:05:03.732] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:05:03.732] [exthost] [error] undefined
+[2020-10-16 22:05:09.987] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:05:09.987] [exthost] [error] undefined
+[2020-10-16 22:05:52.266] [exthost] [info] extension host started
+[2020-10-16 22:05:52.408] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2020-10-16 22:05:52.408] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2020-10-16 22:05:52.415] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onDebugDynamicConfigurations"}
+[2020-10-16 22:05:52.415] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2020-10-16 22:05:52.513] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools {"startup":false,"extensionId":{"value":"ms-vscode.cpptools","_lower":"ms-vscode.cpptools"},"activationEvent":"onLanguage:c"}
+[2020-10-16 22:05:52.513] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/ms-vscode.cpptools-1.0.1/dist/main
+[2020-10-16 22:05:52.551] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-10-16 22:05:52.551] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-10-16 22:05:52.552] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-10-16 22:05:52.552] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2020-10-16 22:05:52.563] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-10-16 22:05:52.563] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2020-10-16 22:05:52.581] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-10-16 22:05:52.581] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2020-10-16 22:05:52.583] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-10-16 22:05:52.583] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2020-10-16 22:05:52.644] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-10-16 22:05:52.644] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/github/dist/extension.js
+[2020-10-16 22:05:52.681] [exthost] [info] eager extensions activated
+[2020-10-16 22:05:52.822] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2020-10-16 22:05:52.822] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/github-authentication/dist/extension.js
+[2020-10-16 22:06:16.622] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:06:16.622] [exthost] [error] undefined

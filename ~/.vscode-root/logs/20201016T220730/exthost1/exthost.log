@@ -1,0 +1,70 @@
+[2020-10-16 22:07:32.398] [exthost] [info] extension host started
+[2020-10-16 22:07:32.531] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2020-10-16 22:07:32.531] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2020-10-16 22:07:32.542] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onDebugDynamicConfigurations"}
+[2020-10-16 22:07:32.542] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2020-10-16 22:07:32.640] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools {"startup":false,"extensionId":{"value":"ms-vscode.cpptools","_lower":"ms-vscode.cpptools"},"activationEvent":"onLanguage:c"}
+[2020-10-16 22:07:32.640] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/ms-vscode.cpptools-1.0.1/dist/main
+[2020-10-16 22:07:32.682] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-10-16 22:07:32.683] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-10-16 22:07:32.684] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-10-16 22:07:32.684] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2020-10-16 22:07:32.696] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-10-16 22:07:32.696] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2020-10-16 22:07:32.714] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-10-16 22:07:32.714] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2020-10-16 22:07:32.716] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-10-16 22:07:32.716] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2020-10-16 22:07:32.859] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-10-16 22:07:32.859] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/github/dist/extension.js
+[2020-10-16 22:07:32.901] [exthost] [info] eager extensions activated
+[2020-10-16 22:07:32.934] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2020-10-16 22:07:32.934] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/github-authentication/dist/extension.js
+[2020-10-16 22:10:45.161] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:10:45.161] [exthost] [error] undefined
+[2020-10-16 22:10:46.436] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+[2020-10-16 22:10:56.267] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:10:56.267] [exthost] [error] undefined
+[2020-10-16 22:11:04.751] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+[2020-10-16 22:11:07.064] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:11:07.064] [exthost] [error] undefined
+[2020-10-16 22:11:15.798] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:11:15.798] [exthost] [error] undefined
+[2020-10-16 22:11:24.388] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:11:24.388] [exthost] [error] undefined
+[2020-10-16 22:11:28.548] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+[2020-10-16 22:11:29.087] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action does not have a 'kind'. Code action will be dropped. Please set 'CodeAction.kind'.
+[2020-10-16 22:12:04.039] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:12:04.039] [exthost] [error] undefined
+[2020-10-16 22:13:53.006] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:13:53.006] [exthost] [error] undefined
+[2020-10-16 22:15:40.392] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:15:40.392] [exthost] [error] undefined
+[2020-10-16 22:15:41.540] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:15:41.540] [exthost] [error] undefined
+[2020-10-16 22:15:42.196] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:15:42.196] [exthost] [error] undefined
+[2020-10-16 22:15:52.122] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:15:52.122] [exthost] [error] undefined
+[2020-10-16 22:16:07.657] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:16:07.657] [exthost] [error] undefined
+[2020-10-16 22:16:12.974] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:16:12.974] [exthost] [error] undefined
+[2020-10-16 22:16:15.797] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:16:15.797] [exthost] [error] undefined
+[2020-10-16 22:16:44.396] [exthost] [error] onWillSaveTextDocument-listener from extension 'ms-vscode.cpptools' threw ERROR
+[2020-10-16 22:16:44.486] [exthost] [error] Error: timeout
+	at Timeout._onTimeout (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:638:581)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[2020-10-16 22:16:48.918] [exthost] [error] onWillSaveTextDocument-listener from extension 'ms-vscode.cpptools' threw ERROR
+[2020-10-16 22:16:48.918] [exthost] [error] Error: timeout
+	at Timeout._onTimeout (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:638:581)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[2020-10-16 22:16:55.299] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:16:55.299] [exthost] [error] undefined
+[2020-10-16 22:16:57.984] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:16:57.984] [exthost] [error] undefined
+[2020-10-16 22:18:53.539] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2020-10-16 22:18:53.539] [exthost] [error] undefined
