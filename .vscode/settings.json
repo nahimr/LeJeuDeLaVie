@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "random": "c"
+        "random": "c",
+        "*.cuh": "c",
+        "*.tcc": "c",
+        "istream": "c"
     }
 }
