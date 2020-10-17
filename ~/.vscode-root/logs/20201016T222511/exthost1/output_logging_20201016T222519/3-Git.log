@@ -4607,3 +4607,50 @@ fatal: no upstream configured for branch 'master'
 > git for-each-ref --sort -committerdate --format %(refname) %(objectname)
 > git remote --verbose
 > git config --get commit.template
+> git ls-files --stage -- /home/nahim/Documents/jeudelavie/main.c
+> git status -z -u
+> git cat-file -s c0acd275d0a0792069c77807ef16c61149afb799
+> git ls-files --stage -- /home/nahim/Documents/jeudelavie/main.c
+> git symbolic-ref --short HEAD
+> git cat-file -s c0acd275d0a0792069c77807ef16c61149afb799
+> git rev-parse master
+> git show --textconv :main.c
+> git rev-parse --symbolic-full-name master@{u}
+> git show --textconv :main.c
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/nahim/Documents/jeudelavie/main.c
+> git status -z -u
+> git cat-file -s c0acd275d0a0792069c77807ef16c61149afb799
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :.gitignore
+> git ls-files --stage -- /home/nahim/Documents/jeudelavie/.gitignore
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :main.c
+> git ls-files --stage -- /home/nahim/Documents/jeudelavie/main.c
+> git cat-file -s c0acd275d0a0792069c77807ef16c61149afb799
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
