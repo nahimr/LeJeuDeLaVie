@@ -1,6 +1,6 @@
 .PHONY: main
 main:
-	gcc -Wall -std=c11 -Wextra -pedantic-errors main.c -L /usr/lib -lSDL2  -I /usr/local/include -o main && ./main
+	gcc -Wall -std=c11 -Wextra -funroll-loops -finline-functions -pedantic-errors main.c -L /usr/lib -lSDL2  -I /usr/local/include -o main && ./main
 debug:
 	gdb --args -Wall -std=c11 -Wextra -pedantic-errors main.c -L /usr/lib -lSDL2  -I /usr/local/include -o main && ./main
 clean:

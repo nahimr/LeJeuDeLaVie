@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include "video.h"
 
-#define TITLE "Le jeu de la vie"
+#define _TITLE_ "Le jeu de la vie"
+#define _HEIGHT_ 1000
+#define _WIDTH_ 1000
 
 enum TYPE_OF_LIFE
 {
@@ -46,29 +48,29 @@ int main(int argc, char *args[])
     Objects objs;
     SDL_Window *window = NULL;
     SDL_Renderer *renderer = NULL;
-    int HEIGHT = 1000;
-    int WIDTH = 1000;
     Uint16 N = 20; // Nombre de case par lignes et par columns nbTotal = N^2
     Uint16 generation = 0;
     Uint8 isRunning = 1;
     Uint8 isPaused = 0;
     Uint8 onStart = 1;
-    Uint8 speed = 10;
+    Uint8 speed = 80;
 
     for (int i = 1; i < argc - 1; i += 2)
     {
-        int temp = atoi(args[i + 1]);
-        if ((!strcmp(args[i], "-n") || !strcmp(args[i], "--number")) && temp > 1)
+        int argsParam = atoi(args[i + 1]);
+        int nbCheck = (!strcmp(args[i], "-n") || !strcmp(args[i], "--number"));
+        int gridCheck = (!strcmp(args[i], "-g") || !strcmp(args[i], "--grid"));
+        if (nbCheck && argsParam > 1)
         {
-            N = temp;
+            N = argsParam;
         }
-        else if ((!strcmp(args[i], "-g") || !strcmp(args[i], "--grid")) && (temp == 1 || temp == 0))
+        else if (gridCheck && (argsParam == 1 || argsParam == 0))
         {
-            grid = temp;
+            grid = argsParam;
         }
     }
 
-    const INIT_VIDEO initv = {WIDTH, HEIGHT, N, HEIGHT / N, WIDTH / N};
+    const INIT_VIDEO initv = {_WIDTH_, _HEIGHT_, N, _HEIGHT_ / N, _WIDTH_ / N};
 
     InitSDL(&window, &renderer, initv);
     InitGame(&objs, initv);
@@ -101,7 +103,7 @@ int main(int argc, char *args[])
                     Uint8 increment = 10;
                     if ((speed + increment) <= 100)
                     {
-                        speed += increment;
+                        speed += 10;
                         SDL_Log("Speed UP +10");
                     }
                 }
@@ -118,6 +120,7 @@ int main(int argc, char *args[])
                 else if (event.key.keysym.sym == SDLK_s)
                 {
                     onStart = 0;
+                    speed = 10;
                 }
                 else if (event.key.keysym.sym == SDLK_c && (isPaused || onStart))
                 {
@@ -344,7 +347,6 @@ void ChangeRectangle(Objects *objs, int x, int y, enum TYPE_OF_LIFE type)
 
 void Render(SDL_Renderer **renderer, Objects *objs, INIT_VIDEO initv)
 {
-
     SDL_SetRenderDrawColor(*renderer, 26, 26, 26, 255);
     SDL_RenderClear(*renderer);
 
@@ -366,7 +368,6 @@ void Render(SDL_Renderer **renderer, Objects *objs, INIT_VIDEO initv)
             {
             case UNDEFINED:
                 SDL_SetRenderDrawColor(*renderer, 0, 0, 0, 0);
-
                 break;
             case ALIVE:
                 SDL_SetRenderDrawColor(*renderer, cellAlive.r, cellAlive.g, cellAlive.b, cellAlive.a);
