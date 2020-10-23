@@ -25,8 +25,8 @@ enum TYPE_OF_LIFE
 
 typedef struct Life
 {
-    enum TYPE_OF_LIFE type; // enumerations des types de vie 
-    Uint8 neighbourAlive; // Voisins en vie € {0,...8}
+    enum TYPE_OF_LIFE type; // enumerations des types de vie
+    Uint8 neighbourAlive;   // Voisins en vie € {0,...8}
 } Life;
 
 typedef struct Objects
@@ -56,16 +56,14 @@ int main(int argc, char *args[])
     SDL_Renderer *renderer = NULL;
     Uint16 N = 20; // Nombre de case par lignes et par columns nbTotal = N^2
     Uint16 generation = 0;
-    Uint8 isRunning = 1;
-    Uint8 isPaused = 0;
-    Uint8 onStart = 1;
+    Uint8 stateOfRunning = 1; // 0 => OnKilled, 1 => OnStart, 2 => OnRunning, 3 => OnPaused
     Uint8 speed = 80;
 
-    for (int i = 1; i < argc - 1; i += 2)
+    for (Uint8 i = 1; i < argc - 1; i += 2)
     {
-        int argsParam = atoi(args[i + 1]);
-        int nbCheck = (!strcmp(args[i], "-n") || !strcmp(args[i], "--number"));
-        int gridCheck = (!strcmp(args[i], "-g") || !strcmp(args[i], "--grid"));
+        Uint16 argsParam = atoi(args[i + 1]);
+        Uint8 nbCheck = (!strcmp(args[i], "-n") || !strcmp(args[i], "--number"));
+        Uint8 gridCheck = (!strcmp(args[i], "-g") || !strcmp(args[i], "--grid"));
         if (nbCheck && argsParam > 1)
         {
             N = argsParam;
@@ -82,7 +80,7 @@ int main(int argc, char *args[])
     InitGame(&objs, initv);
 
     Render(&renderer, &objs, initv);
-    while (isRunning)
+    while (stateOfRunning != 0)
     {
         SDL_Event event;
 
@@ -90,17 +88,20 @@ int main(int argc, char *args[])
         {
             if (event.type == SDL_QUIT)
             {
-                isRunning = 0;
+                stateOfRunning = 0;
             }
             else if (event.type == SDL_KEYDOWN)
             {
-                if (event.key.keysym.sym == SDLK_SPACE && !onStart)
+                if (event.key.keysym.sym == SDLK_SPACE && stateOfRunning != 1)
                 {
-                    isPaused = !isPaused;
-                    if (isPaused)
-                        SDL_Log("Game Paused");
-                    else
+                    if (stateOfRunning != 3)
                     {
+                        stateOfRunning = 3;
+                        SDL_Log("Game Paused");
+                    }
+                    else if (stateOfRunning == 3)
+                    {
+                        stateOfRunning = 2;
                         SDL_Log("Game Resume");
                     }
                 }
@@ -115,7 +116,6 @@ int main(int argc, char *args[])
                 }
                 else if (event.key.keysym.sym == SDLK_MINUS || event.key.keysym.sym == SDLK_m)
                 {
-
                     Uint8 increment = 10;
                     if ((speed - increment) > 0)
                     {
@@ -125,20 +125,19 @@ int main(int argc, char *args[])
                 }
                 else if (event.key.keysym.sym == SDLK_s)
                 {
-                    onStart = 0;
+                    stateOfRunning = 2;
                     speed = 10;
                 }
-                else if (event.key.keysym.sym == SDLK_c && (isPaused || onStart))
+                else if (event.key.keysym.sym == SDLK_c && (stateOfRunning == 3 || stateOfRunning == 1))
                 {
                     InitGame(&objs, initv);
                     Render(&renderer, &objs, initv);
-                    onStart = 1;
-                    isPaused = 0;
+                    stateOfRunning = 1;
                     generation = 0;
                     SDL_Log("Restarting Game !");
                 }
             }
-            else if ((event.type == SDL_MOUSEBUTTONDOWN || event.type == SDL_MOUSEMOTION) && onStart)
+            else if ((event.type == SDL_MOUSEBUTTONDOWN || event.type == SDL_MOUSEMOTION) && stateOfRunning == 1)
             {
                 if (event.button.button == SDL_BUTTON_LEFT)
                 {
@@ -161,7 +160,7 @@ int main(int argc, char *args[])
             }
         }
         LimitFPS(1000 / speed);
-        if (!isPaused && !onStart)
+        if (stateOfRunning == 2)
         {
             SDL_Log("Generation: %i", generation);
             for (int i = 0; i < objs.n; i++)
@@ -398,7 +397,6 @@ void Render(SDL_Renderer **renderer, Objects *objs, INIT_VIDEO initv)
             UpdateNeighbourCount(objs, initv.N, i, j);
         }
     }
-
 
     SDL_RenderPresent(*renderer);
 }
