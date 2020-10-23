@@ -139,6 +139,7 @@ int main(int argc, char *args[])
             }
             else if ((event.type == SDL_MOUSEBUTTONDOWN || event.type == SDL_MOUSEMOTION) && stateOfRunning == 1)
             {
+ 
                 if (event.button.button == SDL_BUTTON_LEFT)
                 {
                     int x = event.motion.x;
@@ -147,8 +148,7 @@ int main(int argc, char *args[])
                     int ypos = (y / initv.wDivN);
                     ChangeRectangle(&objs, xpos, ypos, ALIVE);
                     Render(&renderer, &objs, initv);
-                }
-                else if (event.button.button == SDL_BUTTON_RIGHT)
+                }else if (event.button.button == SDL_BUTTON_RIGHT)
                 {
                     int x = event.motion.x;
                     int y = event.motion.y;
@@ -163,9 +163,9 @@ int main(int argc, char *args[])
         if (stateOfRunning == 2)
         {
             SDL_Log("Generation: %i", generation);
-            for (int i = 0; i < objs.n; i++)
+            for (Uint16 i = 0; i < objs.n; i++)
             {
-                for (int j = 0; j < objs.n; j++)
+                for (Uint16 j = 0; j < objs.n; j++)
                 {
                     if (objs.matrix[i][j].neighbourAlive == 3)
                     {
@@ -184,9 +184,9 @@ int main(int argc, char *args[])
                 }
             }
             Render(&renderer, &objs, initv);
-            for (int i = 0; i < objs.n; i++)
+            for (Uint16 i = 0; i < objs.n; i++)
             {
-                for (int j = 0; j < objs.n; j++)
+                for (Uint16 j = 0; j < objs.n; j++)
                 {
                     if (objs.matrix[i][j].type == APPEARING)
                     {
@@ -224,12 +224,12 @@ void InitGame(Objects *objs, INIT_VIDEO initv)
 }
 void InitGrid(SDL_Renderer **renderer, INIT_VIDEO initv, SDL_Color color)
 {
-    int WIDTH = initv.WIDTH;
-    int HEIGHT = initv.HEIGHT;
-    int casesVertical = initv.hDivN;
-    int casesHorizontal = initv.wDivN;
-    int sumVertial = 0;
-    int sumHorizontal = 0;
+    Uint16 WIDTH = initv.WIDTH;
+    Uint16 HEIGHT = initv.HEIGHT;
+    Uint16 casesVertical = initv.hDivN;
+    Uint16 casesHorizontal = initv.wDivN;
+    Uint16 sumVertial = 0;
+    Uint16  sumHorizontal = 0;
     SDL_SetRenderDrawColor(*renderer, color.r, color.g, color.b, color.a);
 
     do
