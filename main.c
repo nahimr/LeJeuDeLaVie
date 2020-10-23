@@ -25,7 +25,7 @@ enum TYPE_OF_LIFE
 
 typedef struct Life
 {
-    enum TYPE_OF_LIFE type;
+    enum TYPE_OF_LIFE type; // enumerations des types de vie 
     Uint8 neighbourAlive; // Voisins en vie € {0,...8}
 } Life;
 
