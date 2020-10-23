@@ -77,8 +77,8 @@ int main(int argc, char *args[])
     const INIT_VIDEO initv = {_WIDTH_, _HEIGHT_, N, _HEIGHT_ / N, _WIDTH_ / N};
 
     InitSDL(&window, &renderer, initv);
+    SDL_SetWindowTitle(window, _TITLE_);
     InitGame(&objs, initv);
-
     Render(&renderer, &objs, initv);
     while (stateOfRunning != 0)
     {
