@@ -13,7 +13,6 @@
 #define _TITLE_ "Le jeu de la vie"
 #define _HEIGHT_ 1000
 #define _WIDTH_ 1000
-
 enum TYPE_OF_LIFE
 {
     UNDEFINED = 0, // Non instancié (Non vivante)
@@ -88,7 +87,7 @@ int main(int argc, char *args[])
     {
         SDL_Event event;
 
-        while (SDL_PollEvent(&event) != 0)
+        while (SDL_PollEvent(&event))
         {
             if (event.type == SDL_QUIT)
             {
@@ -143,7 +142,7 @@ int main(int argc, char *args[])
             }
             else if ((event.type == SDL_MOUSEBUTTONDOWN || event.type == SDL_MOUSEMOTION) && stateOfRunning == 1)
             {
- 
+
                 if (event.button.button == SDL_BUTTON_LEFT)
                 {
                     int x = event.motion.x;
@@ -152,7 +151,8 @@ int main(int argc, char *args[])
                     int ypos = (y / initv.wDivN);
                     ChangeRectangle(&objs, xpos, ypos, ALIVE);
                     Render(&renderer, &objs, initv);
-                }else if (event.button.button == SDL_BUTTON_RIGHT)
+                }
+                else if (event.button.button == SDL_BUTTON_RIGHT)
                 {
                     int x = event.motion.x;
                     int y = event.motion.y;
@@ -260,8 +260,8 @@ void InitGrid(SDL_Renderer **renderer, INIT_VIDEO initv, SDL_Color color)
 
 void UpdateNeighbourCount(Objects *objs, Uint16 N, int x, int y)
 {
+    // Uniquement 3 calls max sur la matrice ! (Optimization process)
     Uint8 nbTemp = 0;
-
     if ((x - 1) > 0 && (y - 1) > 0)
     {
         if (objs->matrix[x - 1][y - 1].type != UNDEFINED)
@@ -362,15 +362,12 @@ void Render(SDL_Renderer **renderer, Objects *objs, INIT_VIDEO initv)
         InitGrid(renderer, initv, gridColor);
     }
 
-    for (int i = 0; i < objs->n; i++)
+    for (Uint16 i = 0; i < objs->n; i++)
     {
-        for (int j = 0; j < objs->n; j++)
+        for (Uint16 j = 0; j < objs->n; j++)
         {
             switch (objs->matrix[i][j].type)
             {
-            case UNDEFINED:
-                SDL_SetRenderDrawColor(*renderer, 0, 0, 0, 0);
-                break;
             case ALIVE:
                 SDL_SetRenderDrawColor(*renderer, cellAlive.r, cellAlive.g, cellAlive.b, cellAlive.a);
                 break;
@@ -382,10 +379,13 @@ void Render(SDL_Renderer **renderer, Objects *objs, INIT_VIDEO initv)
                 break;
             case ONEGENONLY:
                 SDL_SetRenderDrawColor(*renderer, oneGenCell.r, oneGenCell.g, oneGenCell.b, oneGenCell.a);
+                break;
             default:
-
+                SDL_SetRenderDrawColor(*renderer, 0, 0, 0, 0);
                 break;
             }
+
+            // On veut pas draw les cellules non vivantes
 
             if (objs->matrix[i][j].type == UNDEFINED)
             {
