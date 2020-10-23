@@ -52,11 +52,15 @@ const SDL_Color oneGenCell = {251, 197, 49, 255};
 int main(int argc, char *args[])
 {
     Objects objs;
+    // Instanciation de la SDL
     SDL_Window *window = NULL;
     SDL_Renderer *renderer = NULL;
     Uint16 N = 20; // Nombre de case par lignes et par columns nbTotal = N^2
     Uint16 generation = 0;
-    Uint8 stateOfRunning = 1; // 0 => OnKilled, 1 => OnStart, 2 => OnRunning, 3 => OnPaused
+    /* Les différents états (stateOfRunning):
+        0 => Destroyed, 1 => Start(Paramètrages/Drawing), 2 => Début du jeu, 3 => Jeu en pause
+    */
+    Uint8 stateOfRunning = 1;
     Uint8 speed = 100;
 
     for (Uint8 i = 1; i < argc - 1; i += 2)
@@ -212,11 +216,11 @@ void InitGame(Objects *objs, INIT_VIDEO initv)
     objs->n = initv.N + 1;
     objs->rects = (SDL_Rect **)calloc(objs->n, sizeof(SDL_Rect *));
     objs->matrix = (Life **)calloc(objs->n, sizeof(Life *));
-    for (int i = 0; i < objs->n; i++)
+    for (Uint16 i = 0; i < objs->n; i++)
     {
         objs->rects[i] = (SDL_Rect *)calloc(objs->n, sizeof(SDL_Rect));
         objs->matrix[i] = (Life *)calloc(objs->n, sizeof(Life));
-        for (int j = 0; j < objs->n; j++)
+        for (Uint16 j = 0; j < objs->n; j++)
         {
             AddRectangle(objs, initv, i, j, UNDEFINED);
         }
@@ -224,12 +228,13 @@ void InitGame(Objects *objs, INIT_VIDEO initv)
 }
 void InitGrid(SDL_Renderer **renderer, INIT_VIDEO initv, SDL_Color color)
 {
+    // On créer des variables dans le local scope pour éviter de call plusieurs fois sur initv
     Uint16 WIDTH = initv.WIDTH;
     Uint16 HEIGHT = initv.HEIGHT;
     Uint16 casesVertical = initv.hDivN;
     Uint16 casesHorizontal = initv.wDivN;
     Uint16 sumVertial = 0;
-    Uint16  sumHorizontal = 0;
+    Uint16 sumHorizontal = 0;
     SDL_SetRenderDrawColor(*renderer, color.r, color.g, color.b, color.a);
 
     do
@@ -326,15 +331,12 @@ void UpdateNeighbourCount(Objects *objs, Uint16 N, int x, int y)
 
 void AddRectangle(Objects *objs, INIT_VIDEO initv, Uint16 x, Uint16 y, enum TYPE_OF_LIFE type)
 {
+    // Pas de verif sur x < 0 et y < 0 car unsigned int16 (limited range)
     if ((x >= initv.N || y >= initv.N))
     {
         return;
     }
 
-    if ((x * initv.wDivN) > initv.WIDTH || (y * initv.hDivN) > initv.HEIGHT)
-    {
-        return;
-    }
     SDL_Rect rect;
     rect.x = initv.hDivN * x;
     rect.y = y * initv.wDivN;
