@@ -43,6 +43,5 @@ void InitSDL(SDL_Window **window, SDL_Renderer **renderer, INIT_VIDEO initv)
         exit(EXIT_FAILURE);
     }
 
-    SDL_SetWindowTitle(*window, "Le jeu de la vie");
     SDL_SetRenderDrawBlendMode(*renderer, SDL_BLENDMODE_BLEND);
 }
