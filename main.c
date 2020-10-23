@@ -43,9 +43,7 @@ void Render(SDL_Renderer **renderer, Objects *objs, INIT_VIDEO initv);
 void ChangeRectangle(Objects *objs, int x, int y, enum TYPE_OF_LIFE type);
 void UpdateNeighbourCount(Objects *objs, Uint16 N, int x, int y);
 void LimitFPS(Uint32 n);
-
 Uint8 grid = 1;
-Uint8 debug = 0;
 const SDL_Color gridColor = {82, 82, 82, 255};
 const SDL_Color cellAlive = {200, 200, 200, 255};
 const SDL_Color cellAppearing = {76, 209, 55, 255};
@@ -363,11 +361,6 @@ void Render(SDL_Renderer **renderer, Objects *objs, INIT_VIDEO initv)
         InitGrid(renderer, initv, gridColor);
     }
 
-    if (debug)
-    {
-        printf("=========\n");
-    }
-
     for (int i = 0; i < objs->n; i++)
     {
         for (int j = 0; j < objs->n; j++)
@@ -403,19 +396,9 @@ void Render(SDL_Renderer **renderer, Objects *objs, INIT_VIDEO initv)
             }
 
             UpdateNeighbourCount(objs, initv.N, i, j);
-            if (debug)
-            {
-                printf("Type of Life: %i\n", objs->matrix[i][j].type);
-                printf("Life en: %i,%i\n", i, j);
-                printf("{x:%i,y%i,w%i,h%i}\n", objs->rects[i][j].x, objs->rects[i][j].y, objs->rects[i][j].w, objs->rects[i][j].h);
-                printf("NeigboursCount:%i\n", objs->matrix[i][j].neighbourAlive);
-            }
         }
     }
-    if (debug)
-    {
-        printf("=========\n");
-    }
+
 
     SDL_RenderPresent(*renderer);
 }
