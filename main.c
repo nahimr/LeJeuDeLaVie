@@ -57,7 +57,7 @@ int main(int argc, char *args[])
     Uint16 N = 20; // Nombre de case par lignes et par columns nbTotal = N^2
     Uint16 generation = 0;
     Uint8 stateOfRunning = 1; // 0 => OnKilled, 1 => OnStart, 2 => OnRunning, 3 => OnPaused
-    Uint8 speed = 80;
+    Uint8 speed = 100;
 
     for (Uint8 i = 1; i < argc - 1; i += 2)
     {
